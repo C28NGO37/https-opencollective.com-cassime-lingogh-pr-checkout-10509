@@ -1,0 +1,258 @@
+{
+  "object": {
+    "id": "pi_1HjN66Fzp7ACDVBHcV7iTjS3",
+    "object": "payment_intent",
+    "amount": 99000,
+    "amount_capturable": 0,
+    "amount_received": 0,
+    "application": null,
+    "application_fee_amount": null,
+    "canceled_at": null,
+    "cancellation_reason": null,
+    "capture_method": "manual",
+    "charges": {
+      "object": "list",
+      "data": [
+        {
+          "id": "ch_1HjN67Fzp7ACDVBHDWNXWOTf",
+          "object": "charge",
+          "amount": 99000,
+          "amount_captured": 0,
+          "amount_refunded": 0,
+          "amount_updates": [
+          ],
+          "application": null,
+          "application_fee": null,
+          "application_fee_amount": null,
+          "balance_transaction": null,
+          "billing_details": {
+            "address": {
+              "city": null,
+              "country": null,
+              "line1": null,
+              "line2": null,
+              "postal_code": null,
+              "state": null
+            },
+            "email": null,
+            "name": null,
+            "phone": null
+          },
+          "calculated_statement_descriptor": "UNCATEGORIZED",
+          "captured": false,
+          "created": 1604400643,
+          "currency": "usd",
+          "customer": "cus_IK15psUruaamnz",
+          "description": null,
+          "destination": null,
+          "dispute": null,
+          "disputed": false,
+          "failure_code": "card_declined",
+          "failure_message": "Your card has insufficient funds.",
+          "fraud_details": {
+          },
+          "invoice": null,
+          "livemode": true,
+          "metadata": {
+          },
+          "on_behalf_of": null,
+          "order": null,
+          "outcome": {
+            "network_status": "declined_by_network",
+            "reason": "insufficient_funds",
+            "risk_level": "normal",
+            "seller_message": "The bank returned the decline code `insufficient_funds`.",
+            "type": "issuer_declined"
+          },
+          "paid": false,
+          "payment_intent": "pi_1HjN66Fzp7ACDVBHcV7iTjS3",
+          "payment_method": "src_1HjN66Fzp7ACDVBHHFMrTFR6",
+          "payment_method_details": {
+            "card": {
+              "brand": "visa",
+              "checks": {
+                "address_line1_check": null,
+                "address_postal_code_check": null,
+                "cvc_check": "pass"
+              },
+              "country": "US",
+              "exp_month": 2,
+              "exp_year": 2026,
+              "fingerprint": "l98rRy78lKEcxgWF",
+              "funding": "prepaid",
+              "installments": null,
+              "last4": "4705",
+              "network": "visa",
+              "three_d_secure": null,
+              "wallet": null
+            },
+            "type": "card"
+          },
+          "receipt_email": "lingocass37@gmail.com",
+          "receipt_number": null,
+          "receipt_url": null,
+          "refunded": false,
+          "refunds": {
+            "object": "list",
+            "data": [
+            ],
+            "has_more": false,
+            "total_count": 0,
+            "url": "/v1/charges/ch_1HjN67Fzp7ACDVBHDWNXWOTf/refunds"
+          },
+          "review": null,
+          "shipping": null,
+          "source": {
+            "id": "src_1HjN66Fzp7ACDVBHHFMrTFR6",
+            "object": "source",
+            "amount": null,
+            "card": {
+              "exp_month": 2,
+              "exp_year": 2026,
+              "last4": "4705",
+              "country": "US",
+              "brand": "Visa",
+              "cvc_check": "pass",
+              "funding": "prepaid",
+              "fingerprint": "l98rRy78lKEcxgWF",
+              "three_d_secure": "optional",
+              "name": null,
+              "address_line1_check": null,
+              "address_zip_check": null,
+              "tokenization_method": null,
+              "dynamic_last4": null
+            },
+            "client_secret": "src_client_secret_HkPCY5hcHVgKktOqBYM2wFbB",
+            "created": 1604400645,
+            "currency": null,
+            "flow": "none",
+            "livemode": true,
+            "metadata": {
+            },
+            "owner": {
+              "address": null,
+              "email": null,
+              "name": null,
+              "phone": null,
+              "verified_address": null,
+              "verified_email": null,
+              "verified_name": null,
+              "verified_phone": null
+            },
+            "statement_descriptor": null,
+            "status": "chargeable",
+            "type": "card",
+            "usage": "reusable"
+          },
+          "source_transfer": null,
+          "statement_descriptor": "Uncategorized",
+          "statement_descriptor_suffix": null,
+          "status": "failed",
+          "transfer_data": null,
+          "transfer_group": null
+        }
+      ],
+      "has_more": false,
+      "total_count": 1,
+      "url": "/v1/charges?payment_intent=pi_1HjN66Fzp7ACDVBHcV7iTjS3"
+    },
+    "client_secret": "pi_1HjN66Fzp7ACDVBHcV7iTjS3_secret_o7gVsSKydx9FqHdwLhA4wcdK6",
+    "confirmation_method": "automatic",
+    "created": 1604400642,
+    "currency": "usd",
+    "customer": "cus_IK15psUruaamnz",
+    "description": null,
+    "invoice": null,
+    "last_payment_error": {
+      "charge": "ch_1HjN67Fzp7ACDVBHDWNXWOTf",
+      "code": "card_declined",
+      "decline_code": "insufficient_funds",
+      "doc_url": "https://stripe.com/docs/error-codes/card-declined",
+      "message": "Your card has insufficient funds.",
+      "source": {
+        "id": "src_1HjN66Fzp7ACDVBHHFMrTFR6",
+        "object": "source",
+        "amount": null,
+        "card": {
+          "exp_month": 2,
+          "exp_year": 2026,
+          "last4": "4705",
+          "country": "US",
+          "brand": "Visa",
+          "cvc_check": "pass",
+          "funding": "prepaid",
+          "fingerprint": "l98rRy78lKEcxgWF",
+          "three_d_secure": "optional",
+          "name": null,
+          "address_line1_check": null,
+          "address_zip_check": null,
+          "tokenization_method": null,
+          "dynamic_last4": null
+        },
+        "client_secret": "src_client_secret_HkPCY5hcHVgKktOqBYM2wFbB",
+        "created": 1604400642,
+        "currency": null,
+        "flow": "none",
+        "livemode": true,
+        "metadata": {
+        },
+        "owner": {
+          "address": null,
+          "email": null,
+          "name": null,
+          "phone": null,
+          "verified_address": null,
+          "verified_email": null,
+          "verified_name": null,
+          "verified_phone": null
+        },
+        "statement_descriptor": null,
+        "status": "consumed",
+        "type": "card",
+        "usage": "reusable"
+      },
+      "type": "card_error"
+    },
+    "livemode": true,
+    "metadata": {
+    },
+    "next_action": null,
+    "on_behalf_of": null,
+    "payment_method": null,
+    "payment_method_options": {
+      "card": {
+        "installments": null,
+        "network": null,
+        "request_three_d_secure": "automatic"
+      }
+    },
+    "payment_method_types": [
+      "card"
+    ],
+    "receipt_email": "lingocass37@gmail.com",
+    "review": null,
+    "setup_future_usage": "off_session",
+    "shipping": null,
+    "source": null,
+    "statement_descriptor": "Uncategorized",
+    "statement_descriptor_suffix": null,
+    "status": "requires_payment_method",
+    "transfer_data": null,
+    "transfer_group": null
+  }
+}
+
+
+Amount: {500.00}
+Reference/Communication: acme/76400
+Account Holder Name: CASSIME LINGO
+Account Number: 992015155557
+Account Type: SAVINGS
+Legal Type: BUSINESS
+Routing Number: 114924742 
+Address: 
+  8125 COUNTY ROAD  65
+  Post Code: 36310
+  Country: US
+  State: AL
+  City: ABBEVILLE
